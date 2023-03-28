@@ -5,7 +5,7 @@ import Statistic from './Feedback/Statistics';
 import FeedbackOptions from './Feedback/FeedbackOptions';
 import Notification from './Feedback/Notification';
 
-const App = () => {
+export default function App() {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
@@ -51,4 +51,3 @@ const App = () => {
     </>
   );
 }
-export {App};
